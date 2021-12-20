@@ -38,7 +38,10 @@ export default defineComponent({
         userName: '',
         passWord: ''
       },
-      rules: {},
+      rules: {
+        userName: [{ required: true, message: '用户名不能为空', trigger: 'blur' }],
+        passWord: [{ required: true, message: '密码不能为空', trigger: 'blur' }]
+      },
       formItemS: [
         [
           {
@@ -61,6 +64,7 @@ export default defineComponent({
             prefixIcon: 'J-unlock'
           },
           {
+            prop: 'submit',
             eType: 'Button',
             noShow: false,
             value: '登 录',
