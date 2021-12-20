@@ -12,7 +12,9 @@
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "baseUrl": ".",
+    "suppressImplicitAnyIndexErrors": true,
     "types": [
+      "node",
       "webpack-env"
     ],
     "paths": {
